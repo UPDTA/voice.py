@@ -21,8 +21,6 @@ randxp = 0
 nivel = 1
 xp_ganada = 1
 nfuer_usuario = 0
-#<seccion de salud>
-
 
 def saludm_usuario():
 	saludm = hpmb_usuario + (3*nsal_usuario)
@@ -147,3 +145,4 @@ def combate():
 print(nivel)
 while True:
 	combate()
+#ADSFASDFA
