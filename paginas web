@@ -1,6 +1,9 @@
 https://ide.c9.io/grecobeats/fmatagreco
 
-GitHub: git push -u origin master
+GitHub: 
+        git add .
+        git commit -m "Pon lo que quieras"
+        git push -u origin master
 
 sql python
 http://zetcode.com/db/sqlitepythontutorial/
