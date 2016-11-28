@@ -103,19 +103,20 @@ def combate():
 	global salud_actual_enemigo
 	global salud_actual_usuario
 	salud_actual_enemigo = saludm_enemigo
+	
 	while 1:   	 
 		if salud_actual_usuario > 0 and salud_actual_enemigo > 0:
 			print("\nTu salud es ", salud_actual_usuario, "\nLa salud del enemigo es, ", salud_actual_enemigo)
 			print("1. Atacar \n2. Recuperarte")
 			accion = input("¿Qué quieres hacer? \n")
-			if accion in['atacar', 'Atacar']:
+			if accion in['atacar', 'Atacar', '1']:
 				salud_actual_enemigo -= 10 + 3*nfuer_usuario
 				print("La salud enemiga ha disminuido", 10+3 * nfuer_usuario)
 				if salud_actual_enemigo > 0:
 					ataque_del_enemigo()
 				elif accion == "10100":
 					salud_actual_enemigo = 0
-			elif accion in['recuperarme','Recuperarme', 'recuperarte', 'Recuperarte']:
+			elif accion in['recuperarme','Recuperarme', 'recuperarte', 'Recuperarte', '2']:
 				if salud_actual_usuario == saludm_usuario():
 					print("Tu salud ya está al máximo, haz otra cosa.")
 				else:
